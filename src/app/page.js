@@ -31,7 +31,7 @@ export default function Home() {
         <h1>Devin Smith</h1>
         <Image src="/devin.png" width={238} height={243} alt="Devin Smith" />
         <p>
-          Director of Technology Innovation & Founder @{" "}
+          Director of Technology Innovation & co-founder @{" "}
           <a href="https://ae.studio" target="_blank">
             ae.studio
           </a>{" "}
