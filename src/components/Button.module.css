@@ -1,0 +1,95 @@
+.container {
+  
+}
+.container, .top, .bottom {
+  display: flex;
+}
+.container {
+  flex-direction: column;
+}
+.middle .center {
+  background: blue;
+  padding: 4px 10px;
+}
+
+.container:active .middle .center {
+  transform: translate(2px, 2px);
+}
+
+.container > div > div {
+  background-image: url('/Square Buttons 26x26.png');
+  background-position: -10px -60px;
+}
+
+.top .right, .top .left, .bottom .right, .bottom .left {
+  height: 4px;
+  width: 4px;
+  background-repeat: no-repeat;
+}
+
+.center {
+  width: 100%;
+  background-repeat: repeat-x;
+  background-position: -14px -60px !important;
+  background-size: 4px 4px;
+}
+
+/* .sliced {
+  border: 4px solid transparent;
+  border-image: url('/square-light.png') 4 round;
+  background-color: #e8cfa6;
+  padding: 4px 10px;
+} */
+
+.sliced:active .content {
+  transform: translate(2px, 2px);
+}
+
+.content {
+  z-index: 1;
+  display: block;
+  padding: 3px 3px 6px;
+  position: relative;
+}
+
+.sliced, .sliced * {
+  user-select: none;
+  cursor: pointer;
+}
+.sliced {
+  -webkit-clip-path: polygon(0 6px,3px 6px,3px 3px,6px 3px,6px 0,calc(100% - 6px) 0,calc(100% - 6px) 3px,calc(100% - 3px) 3px,calc(100% - 3px) 6px,100% 6px,100% calc(100% - 6px),calc(100% - 3px) calc(100% - 6px),calc(100% - 3px) calc(100% - 3px),calc(100% - 6px) calc(100% - 3px),calc(100% - 6px) 100%,6px 100%,6px calc(100% - 3px),3px calc(100% - 3px),3px calc(100% - 6px),0 calc(100% - 6px));
+  clip-path: polygon(0 6px,3px 6px,3px 3px,6px 3px,6px 0,calc(100% - 6px) 0,calc(100% - 6px) 3px,calc(100% - 3px) 3px,calc(100% - 3px) 6px,100% 6px,100% calc(100% - 6px),calc(100% - 3px) calc(100% - 6px),calc(100% - 3px) calc(100% - 3px),calc(100% - 6px) calc(100% - 3px),calc(100% - 6px) 100%,6px 100%,6px calc(100% - 3px),3px calc(100% - 3px),3px calc(100% - 6px),0 calc(100% - 6px));
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+
+  border: 3px solid var(--border-color);
+  display: block;
+  padding: 3px 6px;
+}
+
+.sliced:before {
+  background-color: red;
+  border-bottom: 3px solid blue;
+  border-right: 3px solid green;
+  bottom: -3px;
+  -webkit-clip-path: polygon(0 3px,3px 3px,3px 0,calc(100% - 6px) 0,calc(100% - 6px) 3px,100% 3px,100% calc(100% - 3px),calc(100% - 3px) calc(100% - 3px),calc(100% - 3px) calc(100% - 3px),calc(100% - 3px) 100%,6px 100%,6px calc(100% - 3px),3px calc(100% - 3px),3px calc(100% - 6px),0 calc(100% - 6px));
+  clip-path: polygon(0 3px,3px 3px,3px 0,calc(100% - 6px) 0,calc(100% - 6px) 3px,100% 3px,100% calc(100% - 3px),calc(100% - 3px) calc(100% - 3px),calc(100% - 3px) calc(100% - 3px),calc(100% - 3px) 100%,6px 100%,6px calc(100% - 3px),3px calc(100% - 3px),3px calc(100% - 6px),0 calc(100% - 6px));
+  content: "";
+  left: -3px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}
+
+.sliced:after {
+  background-color: var(--border-color);
+  bottom: 0;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  width: 3px;
+}

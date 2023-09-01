@@ -1,0 +1,27 @@
+.main {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h2 {
+  background: blue;
+  padding: 1.2em;
+  color: white;
+}
+
+.main p, .main h1 {
+  font-family: Comic Sans MS, sans-serif;
+}
+
+.main h1 {
+  font-size: 3rem;
+  color: red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
