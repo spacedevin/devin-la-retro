@@ -40,7 +40,7 @@ export default function Home() {
           <br />
           Expert full stack Javascript, PHP, NoSQL, React, Next.js, iOS,
           Android, Web3, AI developer, mentor & leader. Passionate product
-          manager UX/UI designer and creative lead.
+          manager, UI/UX designer and creative lead.
         </p>
         <h3>DOWNLOAD A RESUME</h3>
         <div className={styles.row}>
