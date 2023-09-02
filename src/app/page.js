@@ -2,26 +2,6 @@ import Image from 'next/image'
 import Head from 'next/head'
 import styles from './page.module.css'
 
-export const metadata = {
-  title: 'Devin Smith - Official',
-  description: 'Expert full stack Javascript, PHP, NoSQL, React, Next.js, iOS, Android, Web3, AI developer, mentor & leader. Passionate product manager UX/UI designer and creative lead.',
-  openGraph: {
-    title: 'Devin Smith - Official',
-    description: 'Expert full stack Javascript, PHP, NoSQL, React, Next.js, iOS, Android, Web3, AI developer, mentor & leader. Passionate product manager UX/UI designer and creative lead.',
-    url: 'https://devin.la',
-    siteName: 'Devin Smith',
-    images: [
-      {
-        url: '/devin.png',
-        width: 800,
-        height: 600,
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-}
-
 export default function Home() {
   return (
     <>
@@ -29,7 +9,7 @@ export default function Home() {
       <div>
         <h2>Welcome to the offical website of</h2>
         <h1>Devin Smith</h1>
-        <Image src="/devin.png" width={238} height={243} alt="Devin Smith" />
+        <Image src="/devin.gif" width={238} height={243} alt="Devin Smith" />
         <p>
           Director of Technology Innovation & co-founder @{" "}
           <a href="https://ae.studio" target="_blank">
