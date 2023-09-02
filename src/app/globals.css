@@ -15,7 +15,7 @@
 body {
   color: #000;
   background: url(/ep_naturalwhite.jpg);
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: 'Times New Roman', Times, serif ;
   margin: 0;
   padding: 0;
 }

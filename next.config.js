@@ -9,4 +9,10 @@ module.exports = {
       },
     ]
   },
+  fonts: {
+    family: {
+      sans: ['Times', 'Times New Roman'],
+      serif: ['Times', 'Times New Roman'],
+    },
+  },
 }
