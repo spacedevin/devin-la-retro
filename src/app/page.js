@@ -24,9 +24,11 @@ export default function Home() {
         </p>
         <h3>DOWNLOAD A RESUME</h3>
         <div className={styles.row}>
-          <a href="/resume-devin-smith-2023-cto.pdf">CTO</a>
+          {/* <a href="/resume-devin-smith-2023-cto.pdf">CTO</a>
           <a href="/resume-devin-smith-2023-dev.pdf">Developer</a>
-          <a href="/resume-devin-smith-2023-design.pdf">Designer</a>
+          <a href="/resume-devin-smith-2023-design.pdf">Designer</a> */}
+          <a href="/resume-devin-smith-2023-cto.pdf">Too Long Version</a>
+          <a href="/resume-devin-smith-2023-small.pdf">Short Version</a>
         </div>
         <i>This website is UNDER CONSTRUCTION. Please come back soon.</i>
 
