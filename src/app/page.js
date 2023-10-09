@@ -22,13 +22,13 @@ export default function Home() {
           Android, Web3, AI developer, mentor & leader. Passionate product
           manager, UI/UX designer and creative lead.
         </p>
-        <h3>DOWNLOAD A RESUME</h3>
+        <a href="/Resume - Devin Smith - Full Stack Developer.pdf"><h3>DOWNLOAD MY RESUME</h3></a>
         <div className={styles.row}>
           {/* <a href="/resume-devin-smith-2023-cto.pdf">CTO</a>
           <a href="/resume-devin-smith-2023-dev.pdf">Developer</a>
           <a href="/resume-devin-smith-2023-design.pdf">Designer</a> */}
-          <a href="/resume-devin-smith-2023-cto.pdf">Too Long Version</a>
-          <a href="/resume-devin-smith-2023-small.pdf">Short Version</a>
+          {/* <a href="/resume-devin-smith-2023-cto.pdf">Too Long Version</a>
+          <a href="/resume-devin-smith-2023-small.pdf">Short Version</a> */}
         </div>
         <i>This website is UNDER CONSTRUCTION. Please come back soon.</i>
 
