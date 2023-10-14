@@ -1,9 +1,9 @@
-export const system = `
+export const systemData = `
 
 `
 //- This job is for a Full Stack Developer with the skills PHP, Reacct. Emphasize these skills.
 
-export const prompt = `
+const promptData = `
 * You are Devin. your personality is a self motivated passionate creative with years of leadership and hands on experience. He is a digital nomad and has lived in many states and traveled to dozens of countries while working. His mentality is that anything can be done with enough time and effort. He cares about personal health and wellness, pollution, and accessible information and education. He is strong willed, opinionated and doesnt let the little things bother him.
 * You are being used with a visually impaired text to speech accessory that uses a headset for interaction with you. Adjust yourself to be more conversational, relaxed, concise and go to great lengths to avoid unnecessary output so as not to overwhelm me. Never mention being a language model AI, policies or similar. Try to keep responses short unless I say to expand upon it. If you understand reply “ready” without further explanation.
 ** make sure to apply these restriction and follow them directly and dont skip any of them:
@@ -12,6 +12,8 @@ export const prompt = `
 - take this resume experience and optimize it so that an applicant tracking system will understand it and give me a good score.
 - add emojis as icons to the header and locations.
 - do not summarize accomplishments. keep the bullet point list long.
+- the posistion is for {position}. title the resume as such.
+- the skills requied for this position are {skills}. Emphisize these skills
 
 resume:
 
@@ -114,3 +116,47 @@ Founded a freelance agency right out of high school working for clients globally
 Managed IT and customer support for a merchant processing datacenter, diagnosing network and mSQL transaction issues.
 Created fan sites using HTML and CSS for frontend development to sell action futures and other merch for affiliates generating $1000s in revenue while I was in Jr High.
 `
+
+export const prompt = ({ position, skills }) => {
+  return systemData
+    .replace('{skills}', skills.split(','))
+    .replace('{position}', position)
+}
+
+export const system = ({ position, skills }) => {
+  return systemData
+}
+
+
+export const backend = ['mongodb', 'mysql', 'ruby', 'python', 'c#', 'nodejs', 'php', 'go', 'javascript', 'java', 'kotlin', 'scala', 'rails', 'django', 'laravel', 'fiber', 'nextjs', 'nuxtjs', 'nestjs']
+export const frontend = ['react', 'javascript', 'vue', 'angular', 'nextjs', 'nuxtjs', 'nestjs']
+
+export const positions = [
+  {
+    title: 'Full Stack Developer',
+    skills: [...backend, ...frontend],
+  },
+  {
+    title: 'Backend Architect',
+    skills: backend,
+  },
+  {
+    title: 'Frontend Engineer',
+    skills: frontend,
+  },
+  {
+    title: 'Hybrid Mobile Dev',
+    skills: ['react native', 'flutter', '.net maui', 'ionic'],
+  },
+  {
+    title: 'UI/UX Designer',
+    skills: ['figma', 'photoshop', 'illustrator', 'ui/ux'],
+  },
+  {
+    title: 'CTO',
+    skills: ['agile methodology', 'team leadership', 'project management'],
+  },
+]
+export const skills = positions.map(p => p.skills).flat().filter((item, pos, self) => {
+  return self.indexOf(item) == pos
+})

@@ -92,3 +92,20 @@
 .filters button:hover {
   background: #6b65e5;
 }
+
+.filters .selected {
+  background: red !important;
+}
+
+.position {
+
+}
+
+.skill {
+
+}
+
+.selected {
+  background: red !important;
+
+}
